@@ -205,7 +205,7 @@
                 </a>
             </div>
             <div class="col-sm-6">
-                <a href="#"  data-toggle="modal" data-target="#addTopicModalForm">
+                <a href="#" data-toggle="modal" data-target="#addTopicModalForm">
                     <div class="card h-100 card-hover text-center">
                         <img src="neighbourhood_blog/image/img35.svg" height="150px" class="card-img-top px-5 pt-5"
                             alt="...">
@@ -214,8 +214,8 @@
                         </div>
                     </div>
                 </a>
-                <div class="modal fade" id="addTopicModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="addTopicModalForm" tabindex="-1" role="dialog"
+                    aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog form-dark" role="document">
                         <div class="modal-content card card-image imgCard-signUp">
                             <div class="p-5 z-depth-4">
@@ -227,16 +227,22 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="md-form mb-3 text-right">
-                                        <label data-error="wrong" data-success="right" for="Form-topic">عنوان گفتگو</label>
-                                        <input type="text" id="Form-email5" class="form-control validate form-focus">
+                                        <label data-error="wrong" data-success="right" for="Form-topic">عنوان
+                                            گفتگو</label>
+                                        <input type="text" id="Form-topic-title"
+                                            class="form-control validate form-focus">
                                     </div>
                                     <div class="md-form mb-3 text-right">
-                                        <label data-error="wrong" data-success="right" for="Form-textarea">سوال یا متن گفتگو را بنویسید </label>
-                                        <textarea class="form-control validate  form-focus"></textarea>
+                                        <label data-error="wrong" data-success="right" for="Form-textarea">سوال یا متن
+                                            گفتگو را بنویسید </label>
+                                        <textarea id="form-topic-text"
+                                            class="form-control validate  form-focus"></textarea>
                                     </div>
                                     <div class="md-form mb-3 text-right">
-                                        <label data-error="wrong" data-success="right" for="Form-email5">ایمیل خود را وارد کنید</label>
-                                        <input type="email" id="Form-email5" class="form-control validate  form-focus">
+                                        <label data-error="wrong" data-success="right" for="Form-email5">ایمیل خود را
+                                            وارد کنید</label>
+                                        <input type="email" id="Form-topic-maker"
+                                            class="form-control validate  form-focus">
                                     </div>
                                     <div class="md-form mb-3 text-right">
                                         <label data-error="wrong" data-success="right" for="Form-pass5">رمز عبور</label>
@@ -245,8 +251,9 @@
                                     </div>
                                     <div class="row d-flex align-items-center">
                                         <div class="text-center mx-auto d-block">
-                                            <button type="button"
-                                                class="btn btn-dark btn-lg btn-rounded z-depth-1">اضافه کردن به لیست گفتگوها</button>
+                                            <button type="button" id="addToTopicList"
+                                                class="btn btn-dark btn-lg btn-rounded z-depth-1">اضافه کردن به لیست
+                                                گفتگوها</button>
                                         </div>
                                     </div>
                                 </div>
@@ -256,7 +263,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <footer class="footer-part mt-5 p-5">
         <div class="container">
