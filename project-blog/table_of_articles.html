@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/samim-font@v4.0.5/dist/font-face.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="neighbourhood_blog/index.css">
+  <link rel="icon" href="neighbourhood_blog/image/img7.jpg">
+  <title>محله زنده</title>
+</head>
+
+<body dir="rtl">
+  <div class="position-relative">
+    <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog form-dark" role="document">
+      <div class="modal-content card card-image imgCard-signUp"
+        style="background-image: url('neighbourhood_blog/image/img33.svg');">
+        <div class="p-5 z-depth-4">
+          <div class="modal-header text-center pb-4">
+            <h4 class="modal-title w-100" id="myModalLabel">عضویت در محله زنده</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="md-form mb-3 text-right">
+              <label data-error="wrong" data-success="right" for="Form-email5">نام کاربر</label>
+              <input type="text" id="Form-email5" class="form-control validate form-focus">
+            </div>
+            <div class="md-form mb-3 text-right">
+              <label data-error="wrong" data-success="right" for="Form-email5">ایمیل</label>
+              <input type="email" id="Form-email5" class="form-control validate  form-focus">
+            </div>
+            <div class="md-form mb-3 text-right">
+              <label data-error="wrong" data-success="right" for="Form-pass5">رمز عبور</label>
+              <input type="password" id="Form-pass5" class="form-control validate  form-focus">
+            </div>
+            <div class="md-form mb-3 text-right">
+              <label data-error="wrong" data-success="right" for="Form-pass5">تکرار رمز عبور</label>
+              <input type="password" id="Form-pass5" class="form-control validate form-focus">
+            </div>
+            <div class="row d-flex align-items-center">
+              <div class="text-center mx-auto d-block">
+                <button type="button" class="btn btn-dark btn-lg btn-rounded z-depth-1">عضویت</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-light w-100" id="navbar-home" style="background:none;">
+      <div class="container flex-row-reverse flex-lg-row">
+        <a class="navbar-brand mx-auto logo" href="index.html">محله زنده</a>
+        <button class="navbar-toggler hamburger-icon" onclick="menuMobilehanlde()">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link ml-2 nav-option" href="index.html">خانه <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 nav-option nav-option-active" href="#">مقالات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 nav-option" href="table_of_experience.html">ایده ها و تجربیات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 nav-option" href="#">اخبار محلات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 nav-option" href="forum-page.html">تالار گفتگو</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 nav-option" href="#">آشنایی با من</a>
+            </li>
+          </ul>
+        </div>
+        <button class="signUp signUp-hidden" data-toggle="modal" data-target="#darkModalForm">عضویت در محله زنده</button>
+      </div>
+      <div class="menu-cover d-lg-none" id="mobile-menu">
+        <div class="card w-75 h-100 d-lg-none menu-mobile-card">
+          <div class="card-body">
+            <button class="signUp float-right" data-toggle="modal" data-target="#darkModalForm">عضویت در محله زنده</button>
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-x trasition close-icon"
+              onclick="closehandle()" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <img class="menu-img-selector" src="neighbourhood_blog/image/img7.jpg" alt="">
+            <a href="index.html">
+              <h4 class="card-title text-center my-4 logo">محله زنده</h4>
+            </a>
+            <div class="text-right">
+              <ul class="navbar-nav pr-3">
+                <li class="nav-item">
+                  <a class="nav-link menu-mobile-item menu-mobile-itemactive" href="index.html"><svg width="1em" height="1em"
+                      viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                      <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    </svg>خانه <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-mobile-item" href="table_of_articles.html"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-book menu-mobile-item-icon-active"
+                      viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                    </svg>مقالات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-mobile-item" href="table_of_experience.html"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                      class="bi bi-card-text" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                      <path fill-rule="evenodd"
+                        d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                    </svg>ایده ها و تجربیات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-mobile-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                      height="1em" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                      <path
+                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                    </svg>اخبار محلات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-mobile-item" href="forum-page.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                      height="1em" fill="currentColor" class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                    </svg>تالار گفتگو</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-mobile-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                      class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>آشنایی با من</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <img src="neighbourhood_blog/image/img13.svg" class="img-fluid w-100" style="height: 400px;" alt="محله زنده">
+    <div class="position-absolute w-100 h-100 overlay">
+      <div class="container description">
+        <h3 class="text-center logo">مقالات</h3>
+        <p class="text-center" style="margin-top: 20px;">در این بخش تلاش کردیم تا با گرد آورن مطالبی کار آمد و مهم شما
+          را در دستیابی به دیدگاهی<br> مناسب درباره محله و ویژگی های آن ها و همچنین راهکار های اساسی در پیشبرد
+          اقدامات،<br> یاری برسانیم. همچنین شما هم میتوانید مقالاتتان در این رابطه را با ما به اشتراک بگذارید. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row px-5" style="margin-top: -30px;">
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="#part1">
+          <div class="card h-100 card-hover text-center">
+            <img src="neighbourhood_blog/image/img14.svg" height="150px" class="card-img-top px-5 pt-5" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">مقالاتی برای شناسی بهتر محله</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="#part2">
+          <div class="card h-100 card-hover text-center">
+            <img src="neighbourhood_blog/image/img15.svg" height="150px" class="card-img-top px-5 pt-5" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">راهکار های اساسی در هر اقدام محله ای</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="#part3">
+          <div class="card h-100 card-hover text-center">
+            <img src="neighbourhood_blog/image/img16.svg" height="150px" class="card-img-top px-5 pt-5" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">اشتراک گذاری مقالات</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <h4 class="text-right pt-5" id="part1" style="font-weight: bold;">مقالاتی برای شناسی بهتر محله</h4>
+    <hr>
+    <div class="row pt-3">
+      <div class="col-lg-6">
+        <div class="card mb-4">
+          <div class="card-body">
+            <a href="content1.html">
+              <h4 class="card-title text-right">محله چه جایی است؟</h4>
+            </a>
+            <p class="card-text text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm mx-2"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg> ۱ دقیقه برای خواندن</p>
+          </div>
+          <img src="neighbourhood_blog/image/img2.jpg" class="card-img-bottom px-3 pb-3" alt="..." height="300px">
+          <div>
+            <p class="card-text float-right mr-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-heart ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>۲</p>
+            <p class="card-text float-left ml-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-bookmark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+              </svg></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card mb-4">
+          <div class="card-body">
+            <a href="content2.html">
+              <h4 class="card-title text-right">ویژگی ها و استعدادهای افراد و ارتباط آن با محله</h4>
+            </a>
+            <p class="card-text text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm mx-2"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg> ۲ دقیقه برای خواندن</p>
+          </div>
+          <img src="neighbourhood_blog/image/img3.jpg" class="card-img-bottom px-3 pb-3" alt="..." height="300px">
+          <div>
+            <p class="card-text float-right mr-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-heart ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>۳</p>
+            <p class="card-text float-left ml-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-bookmark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+              </svg></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card mb-4">
+          <div class="card-body">
+            <a href="content4.html">
+              <h4 class="card-title text-right">مزیت انجام دادن اقدامات بصورت محله ای</h4>
+            </a>
+            <p class="card-text text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm mx-2"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg> ۱ دقیقه برای خواندن</p>
+          </div>
+          <img src="neighbourhood_blog/image/img5.jpg" class="card-img-bottom px-3 pb-3" alt="..." height="300px">
+          <div>
+            <p class="card-text float-right mr-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-heart ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>۱</p>
+            <p class="card-text float-left ml-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-bookmark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+              </svg></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="text-right pt-5" id="part2" style="font-weight: bold;">راهکار های اساسی در هر اقدام محله ای</h4>
+    <hr>
+    <div class="row pt-3">
+      <div class="col-lg-6">
+        <div class="card mb-4">
+          <div class="card-body">
+            <a href="content3.html">
+              <h4 class="card-title text-right">قرائت محله یعنی چه؟</h4>
+            </a>
+            <p class="card-text text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm mx-2"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg> ۱ دقیقه برای خواندن</p>
+          </div>
+          <img src="neighbourhood_blog/image/img4.jpg" class="card-img-bottom px-3 pb-3" alt="..." height="300px">
+          <div>
+            <p class="card-text float-right mr-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-heart ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>۲</p>
+            <p class="card-text float-left ml-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-bookmark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+              </svg></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card mb-4">
+          <div class="card-body">
+            <a href="content3.html">
+              <h4 class="card-title text-right">مشورت، کلیدی اساسی در اقدامات محله ای</h4>
+            </a>
+            <p class="card-text text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm mx-2"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg> ۱ دقیقه برای خواندن</p>
+          </div>
+          <img src="neighbourhood_blog/image/img17.png" class="card-img-bottom px-3 pb-3" alt="..." height="300px">
+          <div>
+            <p class="card-text float-right mr-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-heart ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>۲</p>
+            <p class="card-text float-left ml-3"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-bookmark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+              </svg></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="text-right pt-5" id="part3" style="font-weight: bold;">اشتراک گذاری مقالات</h4>
+    <hr>
+    <form class="text-right" action="">
+      <h5 class="mt-5">با به اشتراک گذاشتن مطالب و محتویات در زمینه شناختن بهتر محلات برای انجام اقدام های اجتماعی ما را نیز در این راه یاری برسانید.</h5>
+      <div class="row-form">
+        <input type="text" class="form-control mt-4 col-sm-3 ml-sm-4 d-inline form-focus" placeholder="عنوان ایده یا تجربه">
+        <select id="inputState" class="form-control form-select mt-4 col-sm-3 ml-sm-4 d-inline form-focus">
+          <option selected>دسته مورد نظر را انتخاب کنید</option>
+          <option>تجربیات و ایده ها محیط زیستی</option>
+          <option>تجربیات و ایده ها اجتماعی-فرهنگی</option>
+          <option>تجربیات و ایده ها زیباسازی</option>
+        </select>
+        
+      </div>
+      <div class="row-form">
+        <select id="inputState" class="form-control form-select mt-4 col-sm-3 ml-sm-4 d-inline form-focus">
+          <option selected>مدت زمان برای مطالعه</option>
+          <option>۱ دقیقه</option>
+          <option>۲ دقیقه</option>
+          <option>۳ دقیقه</option>
+          <option>۴ دقیقه</option>
+          <option>۵ دقیقه به بالا</option>
+        </select>
+        <input type="button" class="form-control mt-4 col-sm-3 ml-sm-4 d-inline form-focus" value="عکس مناسب با عنوان را در اینجا آپلود نمایید" onclick="getFile()">
+        <input id="upfile" style='display: none;' type="file" value="upload" onchange="readURL(this);"/>
+      </div>
+      <div id="img-place" class="row-form mt-4"></div>
+      <textarea class="card col-sm-7 form-control  mt-4 form-focus  " style="height: 150px;" name="" id="" placeholder="تجربه یا ایده خود را اینجا بنویسید"></textarea>
+      <div class="row-form">
+        <input type="email" class="form-control mt-4 col-sm-3 ml-sm-4 d-inline form-focus" placeholder="ایمیل">
+        <input type="password" class="form-control mt-4 col-sm-3 d-inline form-focus" placeholder="رمز عبور">
+      </div>
+      <div class="row-form">
+        <button type="submit" class="btn btn-warning mt-4 ml-2 btn-effect">ارسال</button>
+        <button type="reset" class="btn bg-light mt-4 btn-effect" style="background-color: #dae0e5 !important;">پاک کردن</button>
+      </div>
+    </form>
+  </div>
+  <footer class="footer-part mt-5 p-5">
+    <div class="container">
+      <h3 class="text-center">ما را در شبکه های مجازی دنبال کنید</h3>
+      <div class="text-center">
+        <i class="fa fa-instagram icon"></i>
+        <i class="fa fa-twitter icon"></i>
+        <i class="fa fa-telegram icon"></i>
+      </div>
+    </div>
+  </footer>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="neighbourhood_blog/index.js"></script>
+</body>
+
+</html>
